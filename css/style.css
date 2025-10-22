@@ -24,6 +24,7 @@ img {
     margin: auto;
     border-radius: 15px;
     margin-bottom: 2em;
+    display: block;
 }
 
 .ingredients {
@@ -58,29 +59,65 @@ article {
 footer {
     text-align: center;
     font-size: 1em;
+    padding: 1em 0;
 }
 
-/* ...existing code... */
-
-@media (max-width: 600px) {
+/* Media queries pour iPhone et petits écrans */
+@media (max-width: 480px) {
     body {
-        margin-left: 2vw;
-        margin-right: 2vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 2em;
+        margin-bottom: 0.5em;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.4em;
+        margin-bottom: 0.8em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
     }
 
     img {
         width: 100%;
+        margin-bottom: 1.5em;
+        border-radius: 10px;
     }
 
     article {
+        padding: 1.2em;
+        margin-bottom: 1.5em;
+        border-radius: 15px;
+    }
+
+    .ingredients, .preparation {
         padding: 1em;
+        margin-bottom: 1.5em;
+        border-radius: 8px;
+    }
+
+    ul, ol {
+        padding-left: 1.5em;
+    }
+
+    li {
+        font-size: 0.95em;
+        line-height: 1.5;
+        margin-bottom: 0.5em;
+    }
+
+    footer {
+        font-size: 0.85em;
+        padding: 1.5em 0;
+    }
+
+    a {
+        word-break: break-word;
     }
 }
